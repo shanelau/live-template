@@ -65,7 +65,7 @@ function (req, res, next) {
 * `$VAR$`  可以定义一个变量
 * `$ARRAY$` 可输入一个数组
 * `$PARAM$`  可变长度参数
-* `$END$`  光标结束符合
+* `$END$`  光标结束符号
 
 
 ## 更多模板
