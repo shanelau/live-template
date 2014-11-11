@@ -5,6 +5,7 @@ webStrom IDEA , live template     example etc
 webStrom的实时代码模板。
 ### ^_^ 欢迎共享代码模板，提高开发效率
 
+
 软件开发时，你经常要输入重复性的繁琐的代码，比如
 `require`、`modelu.exports` 等等，  
 
