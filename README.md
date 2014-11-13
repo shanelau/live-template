@@ -21,30 +21,9 @@ module.exports = {
 }
 
 ```
-###再说一个例子
-在 javascript文件中输入 `func` ,再按 `tab`
+###DEMO
+![require](./image/re.gif)
 
-输出
-```
-function (光标位置) {
-
-}
-```
-可以继续在光标位置输入需要的参数
-
-```
-function (req,res,next) {
-
-}
-```
-
-`req,res,next` 被红色框框包围了，这个时候按回车
-
-```
-function (req, res, next) {
-    //光标位置
-}
-```
 光标位置又到可以编辑的位置，开发效率提升多少，可想而知了吧。
 
 ##配置步骤
@@ -61,6 +40,7 @@ function (req, res, next) {
     * `Template text` 模板代码
 6. 输入框的下面有一个 蓝色的 `define` 选择，表示选择该模板的作用范围，将会在哪些文件中生效
 
+![setting](./image/setting.png)
 
 ## 语法说明
 * `$VAR$`  可以定义一个变量
@@ -103,7 +83,8 @@ module.exports = {
 ### re
 引入模块
 ```
-require('$END$')
+$name$ = require('$name$')$END$
+
 ```
 
 ### th
