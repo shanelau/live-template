@@ -26,6 +26,21 @@ module.exports = {
 
 光标位置又到可以编辑的位置，开发效率提升多少，可想而知了吧。
 
+###How to instal
+
+For installing templates, you need, just copy all XML files to matching folder and restart WebStopm (PHPStorm)
+
+- Windows: [your home directory]\.[product name][version number]\config\templates
+
+	Example: `C:\Users\Windows-User\.WebStorm6\config\templates\`
+
+- Linux: ~\.[product name][version number]\config\templates
+- MacOS: ~/Library/Preferences/[product name][version number]/templates
+
+## See ./JavaScript.xml
+
+----------
+
 ##配置步骤
 1. 进入设置界面
 2. 搜索 `Live Templates`
@@ -104,6 +119,91 @@ catch(function(err){
   $END$
 })
 ```
+
+### f
+
+```
+function $NAME$($PARAM$) {
+  $END$
+}
+```
+
+### fn
+
+```
+function ($PARAMETERS$) {
+    var me = this;
+    $END$
+}
+```
+
+### ife
+
+```
+if ($CONDITION$) {
+    $END$
+} else {
+
+}
+```
+
+### ?
+Conditional operator that assigns a value to a variable based on some condition
+
+```
+
+$VAR$ = ($CONDITION$) ? $VAL1$ : $VAL2$
+```
+
+### switch
+'switch' statement
+
+```
+
+switch ($EXPRESSION$) {
+case $EXPVALUE1$:
+    $END$
+    break;
+case $EXPVALUE2$:
+
+    break;
+default:
+
+}
+```
+
+### try
+
+```
+
+try {
+    $END$
+} catch (err) {
+
+}
+```
+### for
+
+```
+
+len = $ARRAY$.length;
+for ($INDEX$ = 0; $INDEX$ < len; $INDEX$++) {
+    $VAR$ = $ARRAY$[$INDEX$];
+    $END$    
+}
+```
+
+### forin
+
+```
+
+for (prop in $OBJ$) {
+    if ($OBJ$.hasOwnProperty(prop)) {
+        $END$
+    }
+}
+```
+
 
 ## 更多模板
 
